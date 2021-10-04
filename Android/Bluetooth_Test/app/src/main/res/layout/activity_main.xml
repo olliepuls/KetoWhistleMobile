@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/baseView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/connectionInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not Connected"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/connectionInfo"
+        android:layout_above="@id/textView"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="Device Options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mainButtonBar"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/mainButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/buttonMeasure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Measure"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

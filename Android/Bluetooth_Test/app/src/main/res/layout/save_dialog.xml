@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/save_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save Data"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/data_selection_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Data" />
+
+            <ListView
+                android:id="@+id/data_selection_listview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/save_type_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="How do you want to save the data? \n(Select multiple)" />
+
+            <CheckBox
+                android:id="@+id/save_checkBox_internal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Internal" />
+
+            <CheckBox
+                android:id="@+id/save_checkBox_external"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="External" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/save_filename_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File Name" />
+
+            <EditText
+                android:id="@+id/save_filename_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Filename" />
+        </TableRow>
+</TableLayout>

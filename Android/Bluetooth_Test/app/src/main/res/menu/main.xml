@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_bluetooth_disconnect"
+        android:icon="@drawable/ic_bluetooth_disabled_white_24dp"
+        android:title="@string/action_title_bluetooth_disconnect"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_bluetooth_receive"
+        android:icon="@drawable/ic_import_export_white_24dp"
+        android:title="@string/action_title_receive"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_bluetooth_connect"
+        android:icon="@android:drawable/stat_sys_data_bluetooth"
+        android:title="@string/action_title_bluetooth_connect"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_help"
+        android:icon="@drawable/ic_help_white_24dp"
+        android:title="@string/action_help"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="@string/action_settings"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+</menu>
